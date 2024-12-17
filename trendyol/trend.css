@@ -17,6 +17,7 @@
     width: calc(100%/12*3);
 }
 .card{
+    position: relative;
     border: 1px solid whitesmoke;
     padding-bottom: 50px;
     margin: 80px 30px;
@@ -24,7 +25,8 @@
     border-radius: 10px;
     
 }
-.card img{
+.photo{
+    position: relative;
     width:100%;
     height: auto;
     border-radius: 10px;
@@ -56,7 +58,7 @@
 .price{
     display: flex;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
     font-family: 'source_sans_prosimibold',sans-serif;
     font-size: 20px;
@@ -71,13 +73,14 @@
 .price1{
     display: flex;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
     font-family: 'source_sans_prosimibold',sans-serif;
     font-size: 20px;
     color: #BB0000;
 }
-.card>img{
+.photo{
+    
  cursor:pointer ;
 }
 .rating a{
@@ -88,4 +91,16 @@ h3{
 }
 .col3:hover{
     transform: translateY(-10px);
+}
+
+.heartlogo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.product-stamp{
+    position: absolute;
+    top: 7px;
+    left: 10px;
 }
