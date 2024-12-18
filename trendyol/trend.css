@@ -19,8 +19,8 @@
 .card{
     position: relative;
     border: 1px solid whitesmoke;
-    padding-bottom: 50px;
-    margin: 80px 30px;
+    padding-bottom: 30px;
+    margin:  30px;
     width: 300px;
     border-radius: 10px;
     
@@ -28,7 +28,7 @@
 .photo{
     position: relative;
     width:100%;
-    height: auto;
+    min-height: fit-content;
     border-radius: 10px;
     
     
