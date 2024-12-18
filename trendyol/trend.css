@@ -38,6 +38,8 @@
     display: flex;
     margin-left: 10px;
     gap: 5px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 .rating{
     position: relative;
@@ -60,24 +62,27 @@
     gap: 10px;
     margin-top: 10px;
     margin-left: 10px;
-    font-family: 'source_sans_prosimibold',sans-serif;
-    font-size: 20px;
+    font-family: 'source_sans_proregular',sans-serif;
+    font-size: 16px;
     color: #F27A1A;
+    font-weight: 700;
 }
 .price p{
-    font-family: 'source_sans_prosimibold',sans-serif;
+    font-family: 'source_sans_proregular',sans-serif;
     font-size: 10px;
     color: #F27A1A;
     margin-top: 10px;
+    font-weight: 700;
 }
 .price1{
     display: flex;
     gap: 10px;
     margin-top: 10px;
     margin-left: 10px;
-    font-family: 'source_sans_prosimibold',sans-serif;
+    font-family: 'source_sans_proregular',sans-serif;
     font-size: 20px;
     color: #BB0000;
+    font-weight: 700;
 }
 .photo{
     
