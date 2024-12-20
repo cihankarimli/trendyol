@@ -85,9 +85,8 @@ img{
     main{
         max-width: 1000px;
     }
-    .card{
-        border:1px solid green;
-    }
+    
+    
     .col6{
         width: calc(100%/12*6 - 10px);
     }
@@ -96,9 +95,7 @@ img{
     main{
         max-width:700px;
     }
-    .card{
-        border: 3px solid orange;
-    }
+    
     .col12{
         width: 100%;
     }
