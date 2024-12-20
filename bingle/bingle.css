@@ -71,14 +71,17 @@ h5 {
     cursor: pointer;
 }
 
-span {
+span{
     background: #fff;
-    padding: 10px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 1px solid #ff3494;
     color: #ff3494;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .title2 {
