@@ -1,0 +1,39 @@
+.one{
+    background-color: rgb(93,96,96);
+    grid-area: one;
+}
+.two{
+    background-color: rgb(93,96,96);
+    grid-area: two;
+   
+}
+.three{
+    background-color: rgb(93,96,96);
+    grid-area: three;
+   }
+.four{
+    background-color: rgb(93,96,96);
+    grid-area: four;
+      
+}
+.five{
+    background-color: rgb(93,96,96);
+    grid-area: five;
+}
+
+div{
+    font-size: larger;
+    border-radius: 7px;
+    color: white;
+}
+.cardwrapper{
+    display: grid;
+    grid-template-areas: 'one one one one'
+                          'two two three three'
+                           'two two four five';
+    gap: 10PX;
+    grid-template-rows: 150px 150px 70px 70px;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-content: center;
+    align-content: center;
+}
