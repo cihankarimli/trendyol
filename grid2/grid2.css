@@ -1,0 +1,41 @@
+.A{
+    background-color: rgb(93,96,96);
+    grid-area: A;
+}
+.B{
+    background-color: rgb(93,96,96);
+    grid-area: B;
+   
+}
+.C{
+    background-color: rgb(93,96,96);
+    grid-area: C;
+   }
+.D{
+    background-color: rgb(93,96,96);
+    grid-area: D;
+      
+}
+.E{
+    background-color: rgb(93,96,96);
+    grid-area: E;
+}
+
+div{
+    font-size: larger;
+    border-radius: 7px;
+    color: white;
+}
+.cardwrapper{
+    display: grid;
+    grid-template-areas: 'A A B B'
+                          'C D D D '
+                           'E E E E';
+    gap: 10PX;
+    grid-template-rows: 70px 70px 70px 70px;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-content: center;
+    align-content: center;
+}
+
+
