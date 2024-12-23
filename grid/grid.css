@@ -1,0 +1,59 @@
+.A{
+    background-color: rgb(93,96,96);
+    grid-area: A;
+    border-radius: 7px;
+    color: white;
+    
+}
+.B{
+    background-color: rgb(93,96,96);
+    grid-area: B;
+    border-radius: 7px;
+    color: white;
+}
+.C{
+    background-color: rgb(93,96,96);
+    grid-area: C;
+    border-radius: 7px;
+    color: white;
+}
+.D{
+    background-color: rgb(93,96,96);
+    grid-area: D;
+    border-radius: 7px;
+    color: white;
+}
+.cardwrapper{
+    display: grid;
+    grid-template-areas:'A A B'
+                         'A A B'
+                          'C D B';
+    grid-template-rows: 70px 50px 50px;
+    grid-template-columns: 150px 150px 150px;                      
+    
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.A:hover{
+   
+        transform: translateX(-5px);
+        cursor: pointer;
+    }
+    .B:hover{
+        transform: translateX(5px);
+        cursor: pointer;
+    }
+    .C:hover{
+        transform: translateY(5px);
+        cursor: pointer;
+    }
+    .D:hover{
+        transform: translateY(5px);
+        cursor: pointer;
+    }
+div{
+    font-size: larger;
+    
+}
+
