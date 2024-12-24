@@ -26,7 +26,7 @@ img{
     justify-content: center;
 
 }
-.title{
+.card-title{
     margin:auto;
     margin-top:-px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -41,7 +41,7 @@ img{
     
     
 }
-.satin-al{
+.buy-button{
     width: 69.8px;
     height: 40px;
     border-radius: 7px;
@@ -50,7 +50,7 @@ img{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
 }
-.sepete-ekle{
+.basket-button{
     width: 100px;
     height:40px;
     border-radius: 7px;
@@ -59,7 +59,7 @@ img{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
 }
-.price{
+.card-price{
     margin:auto;
     padding: 8px;
     font-size: 20px;
