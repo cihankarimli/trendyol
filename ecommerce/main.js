@@ -5,6 +5,8 @@ let img = document.querySelectorAll('.card img');
 let dollor = document.querySelector('h4');
 let cardPrices = document.querySelectorAll('h5');
 let cardTitles = document.querySelectorAll('h3');
+let basketLinecontroller=document.querySelector('.basket-line-controller')
+
 
 let isBasketOpen = false;
 localStorage.setItem("isBasketOpen", JSON.stringify(isBasketOpen));
@@ -19,7 +21,7 @@ basket.addEventListener('click', function () {
 });
 
 function loadBasketItems() {
-    basketLine.innerHTML = '';
+    basketLinecontroller.innerHTML = "";
     products.forEach(product => {
         createBasketItem(product);
     });
@@ -41,10 +43,10 @@ function createBasketItem(product) {
     dollorLine.textContent = dollor.textContent;
     bottom.innerHTML = '&lt;';
     top.innerHTML = '&gt;';
-    itemNumber.textContent = product.quantity || 1;
-
+    itemNumber.textContent = product.number || 1;
+    
     li.append(liImg, p, dollorLine, priceLine, bottom, itemNumber, top);
-    basketLine.appendChild(li);
+    basketLinecontroller.appendChild(li);
 
     liImg.style.width = '50px';
     liImg.style.height = '50px';
@@ -67,10 +69,10 @@ function createBasketItem(product) {
     });
 }
 
-function updateProductQuantity(product, quantity) {
+function updateProductQuantity(product, number) {
     let index = products.findIndex(p => p.imgSrc === product.imgSrc && p.cardTitle === product.cardTitle);
     if (index !== -1) {
-        products[index].quantity = quantity;
+        products[index].number = number;
         localStorage.setItem('products', JSON.stringify(products));
     }
 }
@@ -91,14 +93,33 @@ for (let i = 0; i < basketButton.length; i++) {
         let existingProduct = products.find(p => p.imgSrc === imgSrc && p.cardTitle === cardTitle);
 
         if (existingProduct) {
-            existingProduct.quantity += 1;
-            updateProductQuantity(existingProduct, existingProduct.quantity);
+            existingProduct.number += 1;
+            updateProductQuantity(existingProduct, existingProduct.number);
             loadBasketItems();
         } else {
-            let newProduct = { imgSrc, cardTitle, cardPrice, quantity: 1 };
+            let newProduct = { imgSrc, cardTitle, cardPrice, number: 1 };
             products.push(newProduct);
             localStorage.setItem('products', JSON.stringify(products));
             createBasketItem(newProduct);
         }
     });
 }
+
+let checkButton = document.querySelector('.check-button');
+let price = document.querySelector('.price');
+
+checkButton.addEventListener('click', function () {
+    let totalPrice = 0;
+    products.forEach(product => {
+        let productPrice = parseFloat(product.cardPrice.replace('$', ''));
+        totalPrice += productPrice * product.number;
+    });
+    price.textContent = ` ${totalPrice.toFixed(2)}$`;
+});
+let deleteButton=document.querySelector('.delete-button')
+deleteButton.addEventListener('click',function () {
+    localStorage.removeItem('products')
+    products=[]
+    basketLinecontroller.innerHTML=''
+    price.textContent='0.00$'
+})

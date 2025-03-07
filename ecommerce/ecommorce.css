@@ -55,15 +55,7 @@ nav ul li:first-child{
 
 
 
-.basket-line-controller
-{
-    display: flex;
-    height: 600px;
-    justify-content:center;
-    align-items: end;
-    margin-left: auto;
-    gap: 10px;
-}
+
 
 .close-button, .check-out
 {
@@ -193,27 +185,19 @@ align-items: center;
     padding: 100px;
     
 }
-.basket-line{
-     opacity: 0%;
+.basket-line,.basket-line-controller{
+   
     position: fixed;
+    
     top: 70px;
     right: 10px;
     border-radius: 10px;
     width: 280px;
-    height: 600px;
+    height: 650px;
     background-color: #f6f7f9;
 }
 
-.basket-line-list{
-    opacity: 0%;
-    position: fixed;
-    top: 70px;
-    right: 10px;
-    border-radius: 10px;
-    width: 280px;
-    height: 600px;
-    background-color: #f6f7f9;
-}
+
 .card {
     border: 1px solid gray;
     border-radius: 10px;
@@ -370,7 +354,7 @@ img{
 li{
     list-style-type: none;
 }
-.basket-line li{
+.basket-line ul li{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -385,4 +369,48 @@ li button{
     background-color: #000000;
     font-size: large;
     cursor: pointer;
+
+}
+.check-line{
+  position: absolute;
+  bottom: 40px;
+  
+}
+.check-button{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: large;
+    background-color:#000000;
+    border: solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.check{
+    display: flex;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.delete-button{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 110px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: large;
+    background-color:red;
+    border: solid red;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.basket-buttons{
+    display: flex;
+   margin-left: -30px;
 }
